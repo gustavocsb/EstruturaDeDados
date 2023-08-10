@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int n, i, d;
+    int n, i, d=0;
 
     printf("Digite um numero: ");
     scanf("%d", &n);
 
-    for(i=2;i<=n;i++){
+    for(i=2;i<n;i++){
         if(n%i==0){
             d++;
             break;

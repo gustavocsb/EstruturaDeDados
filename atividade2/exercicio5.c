@@ -24,9 +24,11 @@ int main(){
     }
 
     printf("O resultado da multiplicacao dos 2 arrays eh:\n");
-    printf("[ ");
+    printf("[");
     for(i=0;i<tamanho;i++){
-        printf("%d ",resultado[i]);
+        if(i==tamanho-1){
+        	printf("%d",resultado[i]);
+		} else printf("%d, ",resultado[i]);
     }
     printf("]");
 
